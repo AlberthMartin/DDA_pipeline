@@ -1,0 +1,20 @@
+{
+    "file": "T21_0003_SoE_-5ms_to_+15ms.csv",
+    "rows": 10000,
+    "columns": [
+        "Time_s",
+        "Backpressure",
+        "ChamberGasTemperature",
+        "IntakePressure",
+        "FuelPressure",
+        "MainInjector_CurrentProfile",
+        "ControlOilToInjector",
+        "ChamberPressure_BarA_",
+        "TemperatureAcc_IdealGasLaw",
+        "ChamberPressure_BarA_ButterFilter",
+        "Derivate_filtered_pressure",
+        "HeatRelease_ButterFilter",
+        "CumulativeHeatRelease_ButterFilter"
+    ],
+    "missing_values": 0
+}

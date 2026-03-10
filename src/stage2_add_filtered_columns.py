@@ -5,6 +5,10 @@ from scipy.integrate import cumulative_trapezoid
 from pathlib import Path
 from tqdm import tqdm
 
+from validation import validate_dataframe
+from metadata import generate_metadata, save_metadata
+from logger import logger
+
 V = 0.0065
 gamma = 1.325
 
@@ -15,7 +19,7 @@ ORDER_P = 3
 ORDER_H = 5
 
 
-def run_stage2(input_folder, output_folder):
+def run_stage2(input_folder, output_folder, metadata_dir, stats):
 
     input_folder = Path(input_folder)
     output_folder = Path(output_folder)
@@ -25,10 +29,12 @@ def run_stage2(input_folder, output_folder):
     files = list(input_folder.glob("*.csv"))
 
     print(f"Processing {len(files)} CSV files")
+    logger.info(f"Stage2 started: {len(files)} files")
 
     for file in tqdm(files):
 
         df = pd.read_csv(file)
+        df = validate_dataframe(df) # Validate data
 
         t = df["Time_s"].values
         p_bar = df["ChamberPressure_BarA_"].values
@@ -60,3 +66,15 @@ def run_stage2(input_folder, output_folder):
 
         out_file = output_folder / file.name
         df.to_csv(out_file, index=False)
+
+        # Saving metadadata
+        metadata = generate_metadata(df,file.name)
+
+        save_metadata(
+            metadata,
+            Path(metadata_dir)/f"{file.stem}.json"
+        )
+
+        stats.file_done()
+
+        logger.info(f"Processed {file.name}")
