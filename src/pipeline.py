@@ -26,16 +26,16 @@ def main():
 
     stats = PipelineStats()
 
-    print("Stage 2: Filtering")
+    print("Stage 2: Data Validation & Signal Processing (Bronze → Silver)")
     run_stage2(BRONZE, SILVER, METADATA, stats)
 
-    print("Stage 3: Averaging")
+    print("Stage 3: Testpoint Aggregation (Silver → Gold)")
     run_stage3(SILVER, GOLD)
 
-    print("Stage 4: Plotting")
+    print("Stage 4: Data Product Generation (Visualization)")
     run_stage4(GOLD, SILVER, PLOTS)
 
-    print("Stage 5: ML model")
+    print("Stage 5: Predictive Analytics (ML Model Training)")
     train_model(GOLD)
 
     stats.save(STATS_DIR / "pipeline_stats.json")
