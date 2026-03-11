@@ -20,3 +20,62 @@
 2026-03-10 14:28:53,124 - INFO - Processed T21_0002_SoE_-5ms_to_+15ms.csv
 2026-03-10 14:28:53,188 - INFO - Processed T20_0004_SoE_-5ms_to_+15ms.csv
 2026-03-10 14:28:53,252 - INFO - Processed T20_0006_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:23:19,434 - INFO - generated new fontManager
+2026-03-11 08:23:20,034 - INFO - Stage2 started: 9 files
+2026-03-11 08:23:20,102 - INFO - Processed T20_0001_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:23:20,164 - INFO - Processed T20_0002_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:23:20,227 - INFO - Processed T20_0003_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:23:20,288 - INFO - Processed T20_0004_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:23:20,350 - INFO - Processed T20_0005_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:23:20,411 - INFO - Processed T20_0006_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:23:20,473 - INFO - Processed T21_0001_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:23:20,535 - INFO - Processed T21_0002_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:23:20,595 - INFO - Processed T21_0003_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:29:51,645 - INFO - Stage2 started: 9 files
+2026-03-11 08:29:51,713 - INFO - Processed T20_0001_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:29:51,778 - INFO - Processed T20_0002_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:29:51,841 - INFO - Processed T20_0003_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:29:51,906 - INFO - Processed T20_0004_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:29:51,971 - INFO - Processed T20_0005_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:29:52,034 - INFO - Processed T20_0006_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:29:52,097 - INFO - Processed T21_0001_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:29:52,162 - INFO - Processed T21_0002_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:29:52,226 - INFO - Processed T21_0003_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,165 - INFO - Stage2 started: found 9 bronze files
+2026-03-11 08:31:49,165 - INFO - Processing T20_0001_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,247 - INFO - Finished T20_0001_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T20_0001_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,247 - INFO - Processing T20_0002_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,324 - INFO - Finished T20_0002_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T20_0002_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,324 - INFO - Processing T20_0003_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,400 - INFO - Finished T20_0003_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T20_0003_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,400 - INFO - Processing T20_0004_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,476 - INFO - Finished T20_0004_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T20_0004_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,476 - INFO - Processing T20_0005_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,552 - INFO - Finished T20_0005_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T20_0005_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,552 - INFO - Processing T20_0006_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,630 - INFO - Finished T20_0006_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T20_0006_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,630 - INFO - Processing T21_0001_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,709 - INFO - Finished T21_0001_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T21_0001_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,710 - INFO - Processing T21_0002_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,788 - INFO - Finished T21_0002_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T21_0002_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,788 - INFO - Processing T21_0003_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:31:49,867 - INFO - Finished T21_0003_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T21_0003_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:49,842 - INFO - Stage2 started: found 9 bronze files
+2026-03-11 08:42:49,842 - INFO - Processing T20_0001_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:49,945 - INFO - Finished T20_0001_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T20_0001_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:49,945 - INFO - Processing T20_0002_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,034 - INFO - Finished T20_0002_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T20_0002_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,034 - INFO - Processing T20_0003_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,120 - INFO - Finished T20_0003_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T20_0003_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,121 - INFO - Processing T20_0004_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,206 - INFO - Finished T20_0004_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T20_0004_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,206 - INFO - Processing T20_0005_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,295 - INFO - Finished T20_0005_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T20_0005_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,295 - INFO - Processing T20_0006_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,381 - INFO - Finished T20_0006_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T20_0006_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,381 - INFO - Processing T21_0001_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,469 - INFO - Finished T21_0001_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T21_0001_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,469 - INFO - Processing T21_0002_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,556 - INFO - Finished T21_0002_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T21_0002_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,556 - INFO - Processing T21_0003_SoE_-5ms_to_+15ms.csv
+2026-03-11 08:42:50,642 - INFO - Finished T21_0003_SoE_-5ms_to_+15ms.csv -> C:\Users\maxnu\OneDrive\Tiedostot\GitHub\DDA_pipeline\data\silver\T21_0003_SoE_-5ms_to_+15ms.csv

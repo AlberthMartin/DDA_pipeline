@@ -19,14 +19,10 @@ def run_stage3(input_folder, output_folder):
     groups = {}
 
     for f in files:
-
         m = pattern.search(f.stem)
-
         if not m:
             continue
-
         tp = m.group(1)
-
         groups.setdefault(tp, []).append(f)
 
     for tp, flist in groups.items():
@@ -34,11 +30,8 @@ def run_stage3(input_folder, output_folder):
         print(f"{tp} -> {len(flist)} repetitions")
 
         mats = []
-
         for f in flist:
-
             df = pd.read_csv(f)
-
             mats.append(df)
 
         t = mats[0]["Time_s"]
@@ -65,5 +58,6 @@ def run_stage3(input_folder, output_folder):
         out["MainInjector_CurrentProfile_std"] = I.std(axis=1)
 
         outfile = output_folder / f"{tp}_avg_{len(flist)}reps.csv"
-
         out.to_csv(outfile, index=False)
+
+        print(f"Wrote {outfile}")

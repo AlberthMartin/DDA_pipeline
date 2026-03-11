@@ -1,11 +1,11 @@
 from pathlib import Path
-import time
 
-from stage2_add_filtered_columns import run_stage2
+from stage2_filter import run_stage2
 from stage3_average import run_stage3
 from stage4_plot import run_stage4
 from stats import PipelineStats
-#from model import train_model
+from model import train_model
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -14,24 +14,32 @@ SILVER = BASE_DIR / "data" / "silver"
 GOLD = BASE_DIR / "data" / "gold"
 PLOTS = BASE_DIR / "data" / "plots"
 METADATA = BASE_DIR / "data" / "metadata"
-STATS = BASE_DIR / "data" / "stats"
+STATS_DIR = BASE_DIR / "data" / "stats"
+
 
 def main():
+    SILVER.mkdir(parents=True, exist_ok=True)
+    GOLD.mkdir(parents=True, exist_ok=True)
+    PLOTS.mkdir(parents=True, exist_ok=True)
+    METADATA.mkdir(parents=True, exist_ok=True)
+    STATS_DIR.mkdir(parents=True, exist_ok=True)
 
     stats = PipelineStats()
 
-    run_stage2(BRONZE,SILVER,METADATA, stats)
-    run_stage3(SILVER,GOLD)
+    print("Stage 2: Filtering")
+    run_stage2(BRONZE, SILVER, METADATA, stats)
+
+    print("Stage 3: Averaging")
+    run_stage3(SILVER, GOLD)
+
+    print("Stage 4: Plotting")
     run_stage4(GOLD, SILVER, PLOTS)
 
-    #train_model(GOLD)
+    print("Stage 5: ML model")
+    train_model(GOLD)
 
-    stats.save(STATS/"pipeline_stats.json")
+    stats.save(STATS_DIR / "pipeline_stats.json")
 
 
 if __name__ == "__main__":
-    # Automatic ingestion if files added
-    while True:
-        main()
-        print("Pipeline completed, waiting for new files...")
-        time.sleep(300)
+    main()
