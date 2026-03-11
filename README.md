@@ -1,23 +1,13 @@
 # Engine Combustion Experiment Data Pipeline
 
-## Implemented Tasks
-
-- Medallion architecture
-- Automated batch ingestion
-- Data validation
-- Metadata generation
-- Structured logging
-- ML model
-- Visualization
-- API for data sharing
-- Automated testing
-
-## Architecture
-pipeline diagram here
-
-## Data Processing
-
-## Example Output
+Check out `docs/` for details about the pipeline
 
 ## How to Run
 python src/pipeline.py
+
+## Todo: 
+- Create pipeline example notebook `example/run_pipeline_example.ipynb`
+- 
+
+
+
