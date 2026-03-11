@@ -3,3 +3,6 @@ numpy
 scipy
 matplotlib
 tqdm
+pandas
+streamlit
+scikit-learn
