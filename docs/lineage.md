@@ -17,7 +17,7 @@ Bronze --> Silver --> Gold --> Data Products
 
 The **Bronze layer** contains the original experimental data collected from combustion measurements. 
 
-Location: data/bronze/
+Location: `data/bronze/`
 
 Purpose:
 - Preserve the original experimentall measurements
@@ -30,9 +30,9 @@ Characteristics:
 - Each file represents a single measurement repetition
 
 Example files:
-T20_0001_SoE_-5ms_to_+15ms.csv
-T20_0002_SoE_-5ms_to_+15ms.csv
-T21_0001_SoE_-5ms_to_+15ms.csv
+- `T20_0001_SoE_-5ms_to_+15ms.csv`
+- `T20_0002_SoE_-5ms_to_+15ms.csv`
+- `T21_0001_SoE_-5ms_to_+15ms.csv`
 
 TXX: stands for the tespoint, each testpoint is carried out with different conditions in the combustion chamber
 
@@ -49,17 +49,17 @@ _SoE_-5ms_to_+15ms: Means that the data in the lab was cut between -5ms before i
 
 The **Silver layer** contains validated and processed data from the Bronze layer.
 
-Location: data/silver/
+Location: `data/silver/`
 
 Purpose: 
 - Produce reliable, clean signals
 - Prepare data for aggregation and analysis
 
 Processing steps:
-- Schema validation (required columns verified)
-- Missing value handling
-- Signal filtering of chamber pressure using a Butterworth filter
-- Calculation of Heat release and cumulative heat release
+1. Schema validation (required columns verified)
+2. Missing value handling
+3. Signal filtering of chamber pressure using a Butterworth filter
+4. Calculation of Heat release and cumulative heat release
 
 New columns added:
 - `ChamberPressure_BarA_ButterFilter`
@@ -89,9 +89,9 @@ Each dataset includes:
 - Mean cumulative heat release
 - Standard deviation of cumulative heat release (reps)
 
-Example dataset:
-T20_avg_6reps.csv
-T21_avg_3reps.csv
+Example datasets:
+- `T20_avg_6reps.csv`
+- `T21_avg_3reps.csv`
 
 --- 
 
@@ -102,7 +102,7 @@ The processed Gold datasets are used to generate multiple **data products**.
 
 # Visualization Dashboard
 
-The project includes an interactive dashboard implemented with **Streamlit**.
+The project includes an **interactive dashboard** implemented with **Streamlit**.
 
 Run the dashboard with the command:
 `streamlit run src/dashboard.py`
